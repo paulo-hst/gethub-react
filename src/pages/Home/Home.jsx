@@ -9,9 +9,7 @@ import UserInfo from '../../components/UserInfo/UserInfo';
 function Home() {
   return(
       <div>
-
         <Header/>
-
         <div className="wrapper-welcome">
             <section id="welcome">
                 <div className="text">
@@ -35,10 +33,9 @@ function Home() {
                     <UserInfo name="Josh Kiszka" login="josh-kiszka" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit." />
                     <UserInfo name="Jake Kiszka" login="jake-kiszka" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit." />
                 </div>
-            </section>
-            
+            </section>            
         </div>
-
+        
       </div>
   )
 }

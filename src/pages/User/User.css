@@ -1,0 +1,66 @@
+/* github stats 494*193 */
+/* top languages 350*165 */
+/* repos 400*120 */
+
+#users h4{
+    color: white;
+    font-weight: 400;
+    margin: 20px 10px;
+}
+.stats-wrapper{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-gap: 10px;
+
+    padding: 10px;
+
+    background: #555;
+}
+
+.stats-container{
+    background: #111;
+    grid-column: 1/6;
+    grid-row: 1;
+
+    height: 150px;
+
+    border-radius: 5px;
+}
+
+.language-container{
+    background: #111;
+    grid-column: 6/9;
+    grid-row: 1;
+    
+    border-radius: 5px;
+}
+
+.repos-wrapper{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+
+    background: #555;
+}
+
+.repo-01{
+    background: #111;
+    grid-column: 1/5;
+    grid-row: 1;
+
+    height: 100px;
+
+    border-radius: 5px;
+}
+
+.repo-02{
+    background: #111;
+    grid-column: 5/9;
+    grid-row: 1;
+
+    height: 100px;
+    
+    border-radius: 5px;
+}
