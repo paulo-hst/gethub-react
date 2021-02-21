@@ -1,0 +1,7 @@
+img user: https://i.imgur.com/In6BGoS.png
+img home: https://i.imgur.com/XFzUPZJ.png
+figma: https://www.figma.com/file/VEMlScBkM2J9lQ1dMayXpP/devbook?node-id=0%3A1
+devchalenge: https://www.devchallenge.com.br/challenges/5f261d39ecb9243236c05387/details
+repo: https://github.com/lucas-lm/devbook-devchallenge
+
+
