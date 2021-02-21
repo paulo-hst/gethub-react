@@ -1,0 +1,17 @@
+#header{    
+    margin: 0 auto;
+    padding: 20px 15px;
+
+    max-width: 900px;
+
+    display: flex;
+    justify-content: space-between;
+    
+    color: var(--primary);
+}
+.logo{
+    font-size: 2rem;
+}
+.logo span{
+    color: var(--secondary);
+}

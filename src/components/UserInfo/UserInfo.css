@@ -1,0 +1,27 @@
+.top-users{    
+    padding: 15px 0px;
+    width: 120px;
+}
+#users img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 120px;
+}
+.description{
+    width: 120px;
+    margin-top: -4px;
+    
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-size: 0.5rem;
+    background: #5e5e5e;
+    color: white;
+}
+.description span{
+    display: flex;
+    justify-content: space-between;
+}
+.description p{
+    padding: 5px;
+}

@@ -1,0 +1,33 @@
+/* Buttons ----------------- */
+.input-default{
+    max-width: 120px;
+    height: 30px;
+    padding: 0 0 0 10px;
+
+    background: var(--extra);
+
+    border: 3px solid var(--primary);
+    border-radius: 40px;
+
+    font-size: 0.7rem;
+    outline: none;
+}
+.button-default{
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+    margin-left: -30px;
+
+    background: var(--primary);
+    color: var(--extra);
+
+    border: 3px solid var(--primary);
+    border-radius: 30px;
+    
+    cursor: pointer;
+    outline: none;
+}
+
+.button-icon{
+}
