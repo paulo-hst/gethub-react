@@ -1,70 +1,86 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# :computer: :green_book: devBook
 
-## Available Scripts
+A bingo book of github devs
 
-In the project directory, you can run:
+![](/static/banner.png)
 
-### `yarn start`
+# Welcome :)
+<a href="https://devchallenge.now.sh/"> DevChallenge</a> allow you to improve your code skills!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Table of Contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  - [Challenge](#challenge)
+    - [Requirements](#requirements)
+      - [Techs](#techs)
+    - [Hints](#hints)
+    - [Bonus Points](#bonus-points)
+  - [Get Started](#get-started)
+  - [Design](#design)
+    - [Colors](#colors)
+    - [Typography](#typography)
+  - [Share](#share)
+  
+# Challenge
+Your challenge is to build a 3 pages website (home/landing page, search results and user details) consuming [github](https://docs.github.com/en/rest/reference/search) and [github stats](https://github.com/anuraghazra/github-readme-stats) public APIs.
 
-### `yarn test`
+## Requirements
+- Homepage should have a search bar where user can search for github users
+- Homepage should have a carousel section that shows the top github users
+- Github user's card should have a name, username and bio.
+- When user performs a search, it should redirect to the results page where the best matches for that search is shown.
+- Whenever a user clicks in a github user card, it should redirects to that github user's page where is shown that user's github stats and repos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Techs
+- HTML
+- CSS
+- JS
 
-### `yarn build`
+You can also use React.js or any other framework you prefer.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Hints
+- You can create your own octocat [here](https://myoctocat.com/build-your-octocat/) to use in your project. Don't forget to remove the white background of your octocat image on photoshop or any other image editor.
+- Use [search params](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams) to generate dynamic pages for the search page. Example: `https://book.dev/search?query=<lucas>`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Bonus Points
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Create light mode and a switch in the navbar to enable it
+- Add contact info of github users in the users' card and users' details
+- Create a filter for searching only the hireable ones
+- Create [skeletons](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a) to be shown while data is fetching in order to improve the website UX. In the design files and figma you can find skeletons models for the cards.
 
-### `yarn eject`
+# Get started
+1 - Use this template or download this repository with the starter code<br>
+2 - Read the instructions in readme.md<br>
+3 - Start coding!<br>
+4 - Share your results with the community :)<br>
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Feel free to use any workflow you are comfortable with :)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Design:
+Check it out on [figma](https://www.figma.com/file/VEMlScBkM2J9lQ1dMayXpP/devbook?node-id=1%3A4) or download the [.fig file](https://github.com/lucas-lm/devbook-devchallenge/blob/master/design/devbook.fig) at `./design`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Colors
+```js
+  colors: {
+    primary: '#6C80EA',
+    secondary: '#A7A5EC',
+    background: {
+      main: 'linear-gradient(to bottom, #000, #00030f)',
+      paper: 'rgba(255, 255, 255, 0.25)',
+    },
+  }
+```
 
-## Learn More
+## Typography
+```css
+font-family: 'Ubuntu', sans-serif; /* logo and headline tags */
+font-family: 'Roboto', sans-serif; /* paragraph, small and input tags */
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Share!
+Initialize your project with this template in your github as a public repository<br>
+Capture a screenshot, gif or video and share your result on Linkedin<br>
+Send me a feedback in  <a href="https://www.linkedin.com/in/lucas-lm/">Linkedin</a>!<br>
