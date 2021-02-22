@@ -32,7 +32,7 @@ function User(props) {
         return (
             repoData.map(
                 item =>
-                <a href={`${githubRepoAPI}/${props.user}/${item}`} key={item} target="_blank">
+                <a href={`${githubRepoAPI}/${props.user}/${item}`} key={item} target="_blank" rel="noreferrer">
                 <img 
                     src={`${githubStatsAPI}/api/pin/?username=${props.user}&repo=${item}&theme=dark&show_icons=true`} 
                     alt={item}

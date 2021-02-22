@@ -17,11 +17,18 @@
     background: #555;
     padding: 10px 20px;
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+
     align-items: center;
+    justify-items: center;
 
     border-radius: 10px;
+}
+
+.stats-images{    
+    width: 100%;
 }
 
 .repos-wrapper{
@@ -39,5 +46,14 @@
 }
 
 .repos-images{
-    width: 400px;
+    width: 100%;
+}
+
+@media screen and (max-width: 400px){
+    .stats-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    } 
+    .repos-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
