@@ -1,7 +1,6 @@
 import React from 'react'
 import './Home.css'
 
-import Header from '../../components/Header/Header';
 import SearchInput from '../../components/SearchInput/SearchInput';
 import octocat from '../../assets/octocat.png'
 import UserInfo from '../../components/UserInfo/UserInfo';
@@ -9,7 +8,6 @@ import UserInfo from '../../components/UserInfo/UserInfo';
 function Home() {
   return(
       <div>
-        <Header/>
         <div className="wrapper-welcome">
             <section id="welcome">
                 <div className="text">
