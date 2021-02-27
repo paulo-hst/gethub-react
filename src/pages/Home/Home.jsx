@@ -25,11 +25,11 @@ function Home(props) {
                 <h3>Top users</h3>
                 <div className="user-info">
                     <UserInfo name="Paulo Teixeira" login="paulo-hst" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit." />
-                    <UserInfo name="Jake Kiszka" login="jake-kiszka" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit." />
+                    {/* <UserInfo name="Jake Kiszka" login="jake-kiszka" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit." />
                     <UserInfo name="Josh Kiszka" login="josh-kiszka" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit." />
                     <UserInfo name="Jake Kiszka" login="jake-kiszka" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit." />
                     <UserInfo name="Josh Kiszka" login="josh-kiszka" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit." />
-                    <UserInfo name="Jake Kiszka" login="jake-kiszka" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit." />
+                    <UserInfo name="Jake Kiszka" login="jake-kiszka" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit." /> */}
                 </div>
             </section>            
         </div>
