@@ -10,7 +10,7 @@ function Header(props) {
   
   return (      
     <header id="header">
-        <Link to="/user" style={{ textDecoration: 'none', color: '#6C80EA' }}>
+        <Link to="/" style={{ textDecoration: 'none', color: '#6C80EA' }}>
           <h1 className="logo">
             <span>get</span>Hub
           </h1>

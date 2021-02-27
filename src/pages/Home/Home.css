@@ -46,8 +46,34 @@
 .user-info{
     display: grid;
     margin: 0 auto;
+    
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
     justify-items: center;
+}
 
+@media screen and (max-width: 800px){    
+    .user-info{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 570px){    
+    .text h2{    
+        font-size: 1.5rem;
+    }
+    .user-info{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 415px){   
+    .text h2{    
+        font-size: 1.2rem;
+    }  
+    .user-info{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

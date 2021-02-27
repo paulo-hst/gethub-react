@@ -13,8 +13,6 @@ function Content() {
     setUser(u)
   }
 
-  console.log('content - ' + user)
-
   return (
     <main className="content">
       <Header getdata={getdata} />
@@ -26,7 +24,7 @@ function Content() {
         </Route>
 
         <Route path="/">
-          <Home />
+          <Home/>
         </Route>
 
       </Switch>

@@ -17,7 +17,6 @@ function User(props) {
 
     const [ repoData, setRepoData ] = useState([])
 
-
     useEffect(() => {
         getRepoData(props.user)
     }, [props.user])
@@ -47,7 +46,7 @@ function User(props) {
         <div>
             <div className="wrapper-user">
                 <section id="users">
-                    <h3>ALTERAR!!!</h3>                   
+                    <h3>{props.user}</h3>                   
 
                     <div className="github-stats">
                         <h4><ArrowDropDownCircleIcon className="arrow-icon"/> GitHub stats</h4>

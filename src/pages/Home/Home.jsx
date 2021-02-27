@@ -5,7 +5,7 @@ import SearchInput from '../../components/SearchInput/SearchInput';
 import octocat from '../../assets/octocat.png'
 import UserInfo from '../../components/UserInfo/UserInfo';
 
-function Home() {
+function Home(props) {
   return(
       <div>
         <div className="wrapper-welcome">

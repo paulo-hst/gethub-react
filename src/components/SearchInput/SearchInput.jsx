@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import './SearchInput.css'
 import Search from "@material-ui/icons/Search";
+import { Link } from 'react-router-dom'
 
 function SearchInput(props) {
+
+  // const inputElement = document.querySelector('.input-default')
 
   const [ user, setUser ] = useState('')
 
@@ -20,9 +23,13 @@ function SearchInput(props) {
           placeholder="Pesquisar"
           onChange={event => { setUser(event.target.value) }}
         />
-        <button className="button-default" onClick={ searchUser }>
-          <Search className="button-icon"/>
-        </button>
+
+          <button className="button-default" onClick={ searchUser }>
+            <Link to={ '/user' }>
+                <Search className="button-icon"/>
+            </Link>
+          </button>
+
     </div>
   )
 }
