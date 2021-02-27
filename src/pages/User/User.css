@@ -1,7 +1,3 @@
-/* github stats 494*193 */
-/* top languages 350*165 */
-/* repos 400*120 */
-
 #users h4{
     margin: 20px 10px;
 
@@ -21,14 +17,27 @@
     grid-template-columns: repeat(2,1fr);
     grid-gap: 10px;
 
+
     align-items: center;
     justify-items: center;
-
     border-radius: 10px;
 }
 
-.stats-images{    
-    width: 100%;
+.stats-stats{
+    grid-row: 1;
+}
+
+.stats-langs{   
+    grid-row: 1;
+}
+
+#users h5{
+    margin: 20px 10px;
+
+    color: white;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    text-align: center;
 }
 
 .repos-wrapper{
@@ -55,5 +64,15 @@
     } 
     .repos-wrapper{
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .stats-stats{
+        grid-row: 1;
+        width: 100%;
+    }
+    
+    .stats-langs{   
+        grid-row: 2;
+        width: 100%;
     }
 }

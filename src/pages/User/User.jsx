@@ -17,6 +17,7 @@ function User(props) {
 
     const [ repoData, setRepoData ] = useState([])
 
+
     useEffect(() => {
         getRepoData(props.user)
     }, [props.user])
@@ -46,18 +47,19 @@ function User(props) {
         <div>
             <div className="wrapper-user">
                 <section id="users">
-                    <h3>{props.name}</h3>                   
+                    <h3>ALTERAR!!!</h3>                   
 
                     <div className="github-stats">
                         <h4><ArrowDropDownCircleIcon className="arrow-icon"/> GitHub stats</h4>
                         <div className="stats-wrapper">
-                            <img className="stats-images" src={ghStats(props.user)} alt='Stats' />
-                            <img className="stats-images" src={ghLangs(props.user)} alt='Langs' />
+                            <img className="stats-stats" src={ghStats(props.user)} alt='Stats' />
+                            <img className="stats-langs" src={ghLangs(props.user)} alt='Langs' />
                         </div>
                     </div>
 
                     <div className="github-repos">
                         <h4><ArrowDropDownCircleIcon className="arrow-icon"/> Repos</h4>
+                        <h5>{repoData.length} Repositories</h5>
                         <div className="repos-wrapper">
                             {returnRepoData()}
                         </div>                      
