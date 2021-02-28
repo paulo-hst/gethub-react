@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 import Home from '../../../pages/Home/Home'
 import User from '../../../pages/User/User'
 import Header from '../../../components/Header/Header'
+import Footer from '../../../components/Footer/Footer'
 
 function Content() {
 
@@ -28,6 +29,8 @@ function Content() {
         </Route>
 
       </Switch>
+      
+      <Footer />
     </main>
   )
 }

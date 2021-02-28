@@ -20,7 +20,7 @@ function User(props) {
     useEffect(() => {
         getRepoData(props.user)
     }, [props.user])
-
+    
     async function getRepoData(u){
         const { data: repository } = await api.get(`/users/${u}/repos`)
         const repoArr = []
