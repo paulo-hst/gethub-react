@@ -5,7 +5,7 @@ import api from '../../services/api'
 
 function UserInfo(props) {
     
-    const [ userData, setUserData ] = useState({  })
+    const [ userData, setUserData ] = useState({ })
 
     useEffect(() => {
         getUserData(props.login)
@@ -20,11 +20,12 @@ function UserInfo(props) {
             description: bio, 
             avatar_url: avatar_url
         }
+
         setUserData(userData)
     }
 
     return(
-        <div className="top-users">            
+        <div className="top-users">          
             <Link to={`/${userData.user}/` } style={{ textDecoration: 'none', color: '#6C80EA' }}>
                 <img className="image-top-user" src={userData.avatar_url} alt="" />
                     <div className="description">

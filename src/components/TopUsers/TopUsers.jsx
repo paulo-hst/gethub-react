@@ -1,8 +1,9 @@
 import axios from 'axios'
+import './TopUsers.css'
 
 import React, { useEffect, useState } from 'react'
-import './TopUsers.css'
-import UserInfo from '../UserInfo/UserInfo';
+import UserInfo from '../UserInfo/UserInfo'
+
 
 const apiTop = axios.create({
     baseURL: 'https://commiters.now.sh/rank'
