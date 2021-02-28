@@ -1,11 +1,8 @@
+import React from 'react'
 import './Home.css'
-
 import SearchInput from '../../components/SearchInput/SearchInput';
 import octocat from '../../assets/octocat.png'
-// import TopUsers from '../../components/TopUsers/TopUsers';
-
-
-// https://commiters.now.sh/rank/brazil
+import TopUsers from '../../components/TopUsers/TopUsers';
 
 function Home(props) {
 
@@ -24,12 +21,7 @@ function Home(props) {
         </div>
 
         <div className="wrapper-user">
-            <section id="users">
-                <h3>Top users</h3>
-                <div className="user-info">
-                    {/* <TopUsers/> */}
-                </div>
-            </section>            
+            <TopUsers/>      
         </div>
         
       </div>

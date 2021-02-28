@@ -1,51 +1,47 @@
-// // import axios from 'axios'
+import axios from 'axios'
 
-// // import React, { useEffect, useState } from 'react'
-// import './TopUsers.css'
-// import UserInfo from '../UserInfo/UserInfo';
+import React, { useEffect, useState } from 'react'
+import './TopUsers.css'
+import UserInfo from '../UserInfo/UserInfo';
 
-// // const apiTop = axios.create({
-// //     baseURL: 'https://commiters.now.sh/rank'
-// // })
+const apiTop = axios.create({
+    baseURL: 'https://commiters.now.sh/rank'
+})
 
+function TopUsers(props) {
 
-// function TopUsers(props) {
+    const [ topUserData, setTopUserData ] = useState([])
 
-//     // const [ topUserData, setTopUserData ] = useState({ })
+    useEffect(() => {
+        getUserData()
+    }, [props])
 
-//     // useEffect(() => {
-//     //     getUserData()
-//     // }, [props])
-
-//     // async function getUserData(){
+    async function getUserData(){
         
-//     //     const { data: { users: { users } } } = await apiTop.get(`/brazil`)
+        // receber dados dos top users do github
+        const { data: { users: { users } } } = await apiTop.get(`/brazil`)
 
-//     //     console.log(users)
-//     //     // const newArr = []
+        const arr = []
 
-//     //     // users.map(item => {
-//     //     //     if(item.rank <= 12) newArr.push(item)
-//     //     // })
+        users.map(item => {
+            if(item.rank <= 12) 
+            arr.push(item.login)
+        })
+        setTopUserData(arr)
+    }
 
-//         // setTopUserData(newArr)
-//     // }
+    function topGenerator(){  
+        return topUserData.map(item => <UserInfo login={item} />)
+    }
 
-//     // // console.log(topUserData[0])
-
-//     return(
-//         <section id="users">
-//             <h3>Top users</h3>
-//             <div className="user-info">
-//                 <TopUsers/>
-//                 <UserInfo 
-//                     name="sadsdf" 
-//                     login="asd" 
-//                     description="Lorem, ipsum dolor sit amet consectetur adipisicing elit." 
-//                 />
-//             </div>
-//         </section> 
-//   )
-// }
-
-// export default TopUsers
+    return(
+        <section id="users">
+            <h3>Top Users</h3>
+            <div className="user-info">
+                {topGenerator()}
+            </div>
+        </section> 
+    )
+}
+    
+export default TopUsers
