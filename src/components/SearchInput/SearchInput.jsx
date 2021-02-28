@@ -17,7 +17,7 @@ function SearchInput(props) {
 
   return (      
     <div className="search">
-        <input 
+        <input
           className="input-default" 
           type="text" 
           placeholder="Pesquisar"

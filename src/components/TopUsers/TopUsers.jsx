@@ -36,7 +36,7 @@ function TopUsers(props) {
 
     return(
         <section id="users">
-            <h3>Top Users</h3>
+            <h3>Top Users on Brazil</h3>
             <div className="user-info">
                 {topGenerator()}
             </div>

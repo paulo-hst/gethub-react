@@ -58,7 +58,6 @@ function User(props) {
 
                     <div className="github-repos">
                         <h4><ArrowDropDownCircleIcon className="arrow-icon"/> Repos</h4>
-                        <h5>Top {repoData.length} Repositories</h5>
                         <div className="repos-wrapper">
                             {returnRepoData()}
                         </div>                      
